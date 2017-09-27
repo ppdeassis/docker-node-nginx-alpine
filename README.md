@@ -5,7 +5,7 @@ Useful for deploying frontend services configurable by environment variables (_r
 
 You can do something like:
 ```Dockerfile
-FROM caiena/node-nginx-alpine
+FROM ppdeassis/node-nginx-alpine:latest
 
 # lets install dependencies
 WORKDIR /app
