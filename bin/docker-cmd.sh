@@ -10,7 +10,7 @@ PROJECT_HOME="${SCRIPT_HOME}/.."
 yarn run build
 
 # copy the dist to nginx html dir
-cp -R "${PROJECT_HOME}/dist/*" /usr/share/nginx/html/
+cp -a "${PROJECT_HOME}/dist/." /usr/share/nginx/html/
 
 # update nginx default.conf
 cp "${PROJECT_HOME}/config/nginx.default.conf" /etc/nginx/conf.d/default.conf
