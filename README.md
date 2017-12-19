@@ -47,7 +47,7 @@ A sample Dockerfile for multi-stage build:
 #   - builds the frontend app (Vue, React, Webpack, ...)
 
 # Use an official node image
-FROM node:8.5-alpine AS builder
+FROM node:9-alpine AS builder
 
 # Reads args and use them to configure the build, setting
 # them as env vars
